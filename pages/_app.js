@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import connect from "../utils/connect";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  connect();
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
